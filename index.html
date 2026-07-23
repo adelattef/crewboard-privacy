@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crew Board — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0f1115; }
+    a { color: #6fb1d6; }
+    code { background: #1c2128; }
+  }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 34px; }
+  .updated { color: #888; font-size: 14px; margin-top: 0; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 4px; font-size: 90%; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .lead { font-size: 16px; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  @media (prefers-color-scheme: dark) { hr { border-top-color: #2a2f37; } }
+</style>
+</head>
+<body>
+
+<h1>Crew Board — Privacy Policy</h1>
+<p class="updated">Last updated: 23 July 2026</p>
+
+<p class="lead">
+  Crew Board (the “app”) is a roster and crew-community app for airline crew —
+  pilots and cabin crew. This policy explains what data the app handles, where it
+  is stored, and your choices. The app is operated by <strong>Adel Attef</strong>
+  (“we”, “us”). You can contact us at any time at
+  <strong>copilotpilotapp@gmail.com</strong>.
+</p>
+
+<p>
+  The guiding principle of Crew Board is <strong>data minimisation</strong>: the
+  information the app needs to do its job stays on your device wherever possible,
+  and we only store on our servers the small amount of data required for your
+  account and the roster-sharing features.
+</p>
+
+<h2>1. Your crew-system (eCrew / AIMS) login stays on your device</h2>
+<p>
+  To show your schedule, the app connects to your airline’s crew system
+  (eCrew / AIMS) on your behalf. Your crew-system <strong>username and password
+  are stored only on your device</strong>, in the device’s protected local
+  storage. They are sent <strong>directly from your device to your airline’s
+  servers over an encrypted (HTTPS) connection</strong> to log you in. They are
+  <strong>never transmitted to, processed by, or stored on our servers</strong>,
+  and we never have access to them.
+</p>
+<p>
+  For airlines that require an interactive sign-in (for example, two-factor
+  authentication with an authenticator app), the app displays <strong>your
+  airline’s own login page</strong> inside the app. You sign in directly with the
+  airline; the app then uses the resulting session, on your device only, to fetch
+  your roster. Codes you enter go to your airline, never to us.
+</p>
+
+<h2>2. Data stored only on your device</h2>
+<p>The following is kept locally on your device and is not uploaded to us:</p>
+<ul>
+  <li>Your roster / schedule and duty details retrieved from the crew system,
+      including flight details, layover hotel information, and the crew names /
+      photos your airline’s system provides for your duties.</li>
+  <li>Your profile details: airline, role, and home base.</li>
+  <li>Personal day memos and app settings (for example, theme and time-display
+      preferences).</li>
+</ul>
+<p>
+  If you sign out, uninstall the app, or clear its data, this on-device
+  information is removed.
+</p>
+
+<h2>3. Data we store for your account and roster sharing</h2>
+<p>
+  Crew Board uses an account so you can connect with colleagues and share
+  rosters. The backend is provided by <strong>Supabase</strong> (see “Service
+  providers” below). The same account works in our companion app
+  <strong>CoPilot</strong> — one account across both apps. We store:
+</p>
+<ul>
+  <li>Your account <strong>email address and password</strong> (the password is
+      handled and securely hashed by Supabase Auth — we never see it in plain
+      text).</li>
+  <li>Your chosen <strong>display name</strong>, your <strong>role</strong>
+      (pilot / cabin crew), and a generated <strong>friend code</strong>.</li>
+  <li>Your <strong>friend relationships</strong> (who you have connected with).</li>
+  <li><strong>Roster summaries you choose to share</strong>: your duty days for a
+      month, and per-day details such as report/debrief times, scheduled flight
+      legs, and layover hotel — so accepted friends can see your availability.</li>
+</ul>
+<p>
+  Only friends you have <strong>accepted</strong> can view your shared roster.
+  Access is enforced at the database level so that no other user can read your
+  data.
+</p>
+<p>We deliberately do <strong>not</strong> share or store on our servers:</p>
+<ul>
+  <li>Your crew-system credentials or sessions (see section 1).</li>
+  <li>Personal memos, or the crew lists / crew photos of your duties.</li>
+</ul>
+
+<h2>4. Emails we send</h2>
+<p>
+  We send transactional emails only — for example, a password-reset code when you
+  request one. These are sent from <code>copilotpilotapp@gmail.com</code>. We do
+  not send marketing emails.
+</p>
+
+<h2>5. What we do NOT do</h2>
+<ul>
+  <li>We do <strong>not</strong> use advertising, ad networks, or ad identifiers.</li>
+  <li>We do <strong>not</strong> use third-party analytics or tracking SDKs.</li>
+  <li>We do <strong>not</strong> collect your device location.</li>
+  <li>We do <strong>not</strong> sell or rent your personal data to anyone.</li>
+</ul>
+
+<h2>6. Service providers</h2>
+<p>
+  We use <strong>Supabase</strong> (supabase.com) to host the database and
+  authentication for accounts and roster sharing. Supabase processes the data
+  described in section 3 on our behalf. We use <strong>Google Play</strong> and
+  <strong>Apple App Store / TestFlight</strong> to distribute the app.
+  Transactional email is delivered via Google’s mail servers. These providers
+  process data only as needed to provide their service.
+</p>
+
+<h2>7. Data retention and deletion</h2>
+<p>
+  On-device data exists only on your device and is removed when you sign out,
+  uninstall the app, or clear its data. Account and sharing data is retained
+  until you delete your account. <strong>To delete your account and all
+  associated server-side data, email <strong>copilotpilotapp@gmail.com</strong>
+  from the address on your account</strong> — see the
+  <a href="./delete-account.html">account deletion page</a> for details. Because
+  one account serves both Crew Board and CoPilot, deleting it removes your
+  account from both apps. Removing a friend deletes that sharing relationship
+  for both sides.
+</p>
+
+<h2>8. Security</h2>
+<ul>
+  <li>Crew-system credentials never leave your device and are never sent to us.</li>
+  <li>All network connections use encryption (HTTPS / TLS).</li>
+  <li>Account and sharing data is protected by per-user database access rules so
+      you can only read your own data and data shared with you by accepted
+      friends.</li>
+</ul>
+
+<h2>9. Children</h2>
+<p>
+  Crew Board is a professional tool intended for working airline crew and is not
+  directed to children. It is intended for users aged 18 and over.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  We may update this policy as the app evolves. When we do, we will revise the
+  “Last updated” date at the top. Material changes will be reflected here before
+  they take effect.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Questions about this policy or your data? Email
+  <strong>copilotpilotapp@gmail.com</strong>.
+</p>
+
+<hr />
+<p style="color:#888; font-size:13px;">
+  Crew Board is an independent app and is not endorsed by or affiliated with any
+  airline. Airline and crew-system names are used only to describe
+  interoperability.
+</p>
+
+</body>
+</html>
